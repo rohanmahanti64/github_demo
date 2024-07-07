@@ -1,10 +1,5 @@
 package com.demo.controller;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
-
-@RestController
-@RequestMapping("/auth")
 public class AuthController {
 
     @GetMapping("/getLocation")
@@ -20,6 +15,8 @@ public class AuthController {
     public String updateLocation(){
         return "Bangalore";
     }
-
+public void AuthContoller() {
+	// this is demo auth controller.
+	System.out.println("Authentication and Authorization provider");
 }
-
+}
