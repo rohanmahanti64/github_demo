@@ -21,5 +21,10 @@ public class AuthController {
         return "Bangalore";
     }
 
+public void AuthContoller() {
+	// this is demo auth controller.
+	System.out.println("Authentication and Authorization provider");
+}
+
 }
 
