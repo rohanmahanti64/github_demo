@@ -29,6 +29,11 @@ public class UserController {
 		UserDto createdUser = this.userService.createUser(userDto);
 		return new ResponseEntity<UserDto>(createdUser, HttpStatus.CREATED);
 	}
+
+	@PostMapping("/develop")
+	public String developUser(){
+		return "vijay";
+	}
 	
 	@GetMapping("/get/{userId}")
 	public ResponseEntity<UserDto> getUser(@PathVariable("userId") Integer userId){
